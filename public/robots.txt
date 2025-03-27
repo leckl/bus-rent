@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://exclusive-bus.com/sitemap.xml
