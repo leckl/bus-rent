@@ -2,7 +2,7 @@
   <div class="max-w-3xl mx-auto mt-10">
     <swiper :slides-per-view="1" :space-between="10" class="">
       <swiper-slide v-for="(image, index) in props.images" :key="index">
-        <img :src="image" alt="Фото" class="w-full h-auto object-cover rounded-lg" />
+        <img :src="image" loading="lazy" alt="Фото" class="w-full h-auto object-cover rounded-lg" />
       </swiper-slide>
     </swiper>
   </div>

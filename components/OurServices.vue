@@ -17,13 +17,13 @@
             <button @click="orderCall" class="bg-[#263C7A] cursor-pointer mt-12 rounded-full text-white px-6 py-5">Заказать звонок</button>
           </div>
           <div class="flex gap-10 mt-7">
-            <img class="object-cover" src="/img/OurService1.png" alt="Наши услуги 1">
-            <img class="object-cover hidden sdesk:block" src="/img/OurService2.png" alt="Наши услуги 2">
+            <img class="object-cover" loading="lazy" src="/img/OurService1.webp" alt="Наши услуги 1">
+            <img class="object-cover hidden sdesk:block" loading="lazy" src="/img/OurService2.webp" alt="Наши услуги 2">
           </div>
         </div>
         <div class="flex gap-3 sdesk:gap-10">
-          <img class="object-cover" src="/img/OurService3.png" alt="">
-          <img class="object-cover hidden xlg:block" src="/img/OurService4.png" alt="">
+          <img class="object-cover" loading="lazy" src="/img/OurService3.webp" alt="Наши услуги 3">
+          <img class="object-cover hidden xlg:block" loading="lazy" src="/img/OurService4.webp" alt="Наши услуги 4">
         </div>
       </div>
 
@@ -40,16 +40,16 @@
             <button @click="orderCall" class="bg-[#263C7A] cursor-pointer mt-12 rounded-full text-white px-6 py-5">Заказать звонок</button>
           </div>
           <div>
-            <img class="block md:hidden object-cover" src="/img/OurService Vertical.png" alt="">
+            <img class="block md:hidden object-cover" loading="lazy" src="/img/OurService Vertical.webp" alt="Наши услуги">
           </div>
           <div class="hidden md:flex gap-10 mt-7">
-            <img class="object-cover rounded-[10px] object-center" src="/img/OurService1.png" alt="Наши услуги 1">
-            <img class="object-cover hidden sdesk:block" src="/img/OurService2.png" alt="Наши услуги 2">
+            <img class="object-cover rounded-[10px] object-center" loading="lazy" src="/img/OurService1.webp" alt="Наши услуги 1">
+            <img class="object-cover hidden sdesk:block" loading="lazy" src="/img/OurService2.webp" alt="Наши услуги 2">
           </div>
         </div>
         <div class="hidden md:flex gap-3 sdesk:gap-10">
-          <img class="object-cover" src="/img/OurService3.png" alt="">
-          <img class="object-cover hidden xlg:block" src="/img/OurService4.png" alt="">
+          <img class="object-cover" loading="lazy" src="/img/OurService3.webp" alt="Наши услуги 3">
+          <img class="object-cover hidden xlg:block" loading="lazy" src="/img/OurService4.webp" alt="Наши услуги 4">
         </div>
       </div>
 

@@ -9,7 +9,7 @@
       <AdvantagesSwiper :advantages="advantages" class="block xlg:hidden" />
     </div>
   </section>
-  <img class="w-full" src="/img/AdvantagesBackgroundImage.png" alt="">
+  <img class="w-full" loading="lazy" src="/img/AdvantagesBackgroundImage.webp" alt="">
 </template>
 
 <script setup>

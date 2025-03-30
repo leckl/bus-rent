@@ -1,20 +1,4 @@
 <template>
-  <head>
-    <title>Пассажирские перевозки Иркутск и Байкал – Заказать трансфер</title>
-    <meta name="description" content="Пассажирские перевозки в любых направлениях. Комфортные и безопасные поездки на автобусах.">
-    <meta name="keywords" content="пассажирские перевозки Иркутск, Перевозка сотрудников, Перевозки детей, Экскурсии на Байкал и не только">
-    <meta name="author" content="ИП Тимонин Е.А.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- Open Graph для соцсетей -->
-    <meta property="og:title" content="Пассажирские перевозки ИП Тимонин">
-    <meta property="og:description" content="Пассажирские перевозки в любых направлениях. ИП Тимонин">
-    <meta property="og:image" content="/new_logo.png">
-    <meta property="og:url" content="https://exclusive-bus.com">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="/favicon.ico">
-  </head>
   <div class="bg-custom-gradient text-[#191D27]">
     <div class="mx-[0px] xsm:mx-[30px] sm:mx-[60px] lg:mx-[120px] desk:mx-[200px] px-1.5 font-Manrope">
       <header class="pt-6 pb-6 fixed top-0 left-0 right-0 z-30 xsm:px-[30px] sm:px-[60px] lg:px-[120px] desk:px-[200px] px-1.5 bg-white">
@@ -51,7 +35,7 @@
   <footer id="contacts" class="bg-[#191D27] pt-10 pb-40">
     <div class="xsm:mx-[30px] sm:mx-[60px] lg:mx-[120px] desk:mx-[200px] mx-1.5">
       <div class="flex items-center pb-8">
-        <img class="pr-1.5 object-cover max-w-[130px] max-h-[130px]" src="/img/footer-logo.png" alt="Логотип ИП Тимонин">
+        <img class="pr-1.5 object-cover max-w-[130px] max-h-[130px]" loading="lazy" src="/img/footer-logo.webp" alt="Логотип ИП Тимонин">
         <h2 class="uppercase hidden slg:block text-3xl text-white font-semibold">ИП Тимонин Е.А.</h2>
       </div>
       <div class="flex gap-5 xsm:gap-20 xmd:gap-44  text-white border-t-2 border-[#616161] pt-12">
@@ -80,11 +64,30 @@
 
   const orderCall = () => {
     $eventBus.emit('openOrderCall');
-  }
+  };
 
   $eventBus.on('openOrderCall', () => {
     orderCallModal.value.openModal();
-  })
+  });
+
+  useHead({
+    title: "Пассажирские перевозки Иркутск и Байкал – Заказать трансфер",
+    meta: [
+      { name: "description", content: "Пассажирские перевозки в любых направлениях. Комфортные и безопасные поездки на автобусах." },
+      { name: "keywords", content: "пассажирские перевозки Иркутск, Перевозка сотрудников, Перевозки детей, Экскурсии на Байкал и не только" },
+      { name: "author", content: "ИП Тимонин Е.А." },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+
+      // Open Graph
+      { property: "og:title", content: "Пассажирские перевозки ИП Тимонин" },
+      { property: "og:description", content: "Пассажирские перевозки в любых направлениях. ИП Тимонин" },
+      { property: "og:image", content: "/img/new_logo.png" },
+      { property: "og:url", content: "https://exclusive-bus.com" }
+    ],
+    link: [
+      { rel: "icon", type: "image/png", href: "/img/new_logo-removebg-preview.png" }
+    ]
+  });
 </script>
 
 <style>
