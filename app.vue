@@ -4,7 +4,7 @@
       <header class="pt-6 pb-6 fixed top-0 left-0 right-0 z-30 xsm:px-[30px] sm:px-[60px] lg:px-[120px] desk:px-[200px] px-1.5 bg-white">
         <div class="flex items-center justify-between">
           <div class="flex gap-5 items-center">
-            <img class="pr-1.5 object-cover max-w-[130px] max-h-[130px]" src="/img/new_logo-removebg-preview.png" alt="Логотип ИП Тимонин">
+            <img class="pr-1.5 object-cover max-w-[130px] max-h-[130px]" loading="lazy" src="/img/new_logo-removebg-preview.png" alt="Логотип ИП Тимонин">
             <h2 class="uppercase hidden slg:block text-3xl text-[#263C7A] font-semibold">ИП Тимонин Е.А.</h2>
           </div>
           <div class="flex items-center text-[16px] xsm:text-[20px] gap-3 font-medium">
